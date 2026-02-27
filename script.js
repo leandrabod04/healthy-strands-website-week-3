@@ -86,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (!nameMsg && !emailMsg && !phoneMsg && !messageMsg) {
             form.hidden = true;
             formSuccess.removeAttribute('hidden');
+            formSuccess.focus();
         } else {
             // Move focus to the first invalid field for accessibility
             const firstInvalid = form.querySelector('.input-error');
