@@ -69,18 +69,26 @@
 
                     <div>
                         <h3 style="margin-bottom: 1rem; color: var(--primary);">Send Us a Message</h3>
+                        <div class="form-success" id="form-success" hidden>
+                            <strong>Message sent!</strong> Thank you for reaching out. We'll get back to you within one business day.
+                        </div>
+
                         <form class="contact-form" action="#" method="POST" novalidate>
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" placeholder="e.g. Jane Smith" required aria-describedby="name-error">
+                            <span class="error-msg" id="name-error" role="alert" aria-atomic="true"></span>
 
                             <label for="email">Email Address</label>
                             <input type="email" id="email" name="email" placeholder="e.g. jane@example.com" required aria-describedby="email-error">
+                            <span class="error-msg" id="email-error" role="alert" aria-atomic="true"></span>
 
                             <label for="phone">Phone Number <span class="label-optional">(optional)</span></label>
                             <input type="tel" id="phone" name="phone" placeholder="e.g. (555) 234-5678" aria-describedby="phone-error">
+                            <span class="error-msg" id="phone-error" role="alert" aria-atomic="true"></span>
 
                             <label for="message">Message</label>
                             <textarea id="message" name="message" placeholder="How can we help you?" required aria-describedby="message-error"></textarea>
+                            <span class="error-msg" id="message-error" role="alert" aria-atomic="true"></span>
 
                             <button type="submit" class="btn">Send Message</button>
                         </form>
