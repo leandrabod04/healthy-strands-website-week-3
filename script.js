@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function validatePhone(value) {
         if (!value.trim()) return ''; // optional field
-        if (!/^[\d\s()\-+]{7,15}$/.test(value)) return 'Please enter a valid phone number.';
+        if (!/^(?=.*\d)[\d\s()\-+]{7,20}$/.test(value)) return 'Please enter a valid phone number.';
         return '';
     }
 
