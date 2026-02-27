@@ -450,6 +450,42 @@ section {
     font-size: 1rem;
 }
 
+/* Form validation states */
+.contact-form input.error,
+.contact-form textarea.error {
+    border-color: #c0392b;
+    background-color: rgba(192, 57, 43, 0.04);
+    margin-bottom: 0.25rem;
+}
+
+.contact-form input.success,
+.contact-form textarea.success {
+    border-color: #27ae60;
+    background-color: rgba(39, 174, 96, 0.04);
+}
+
+.error-msg {
+    display: none;
+    color: #c0392b;
+    font-size: 0.825rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.error-msg:not(:empty) {
+    display: block;
+}
+
+.form-success {
+    background-color: rgba(39, 174, 96, 0.1);
+    border: 1px solid #27ae60;
+    border-radius: 4px;
+    color: #1e8449;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
 /* Page Header */
 .page-header {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
