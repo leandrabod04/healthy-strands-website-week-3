@@ -404,6 +404,20 @@ section {
     border-radius: 8px;
 }
 
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    color: var(--primary);
+    margin-bottom: 0.35rem;
+    font-size: 0.95rem;
+}
+
+.label-optional {
+    font-weight: 400;
+    color: var(--text-light);
+    font-size: 0.875rem;
+}
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
